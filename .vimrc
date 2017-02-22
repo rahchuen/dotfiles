@@ -1,4 +1,5 @@
 call plug#begin()                                
+Plug 'scrooloose/nerdtree'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 call plug#end()
@@ -36,6 +37,13 @@ map <C-l> <C-w>l
 
 set splitbelow
 set splitright
+
+"Jump remap
+map <C-,> <C-i>
+map <C-.> <C-o>
+
+"Toggle nerd tree
+map <C-o> :NERDTreeToggle<CR>
 
 "FZF fuzzy file search
 nnoremap <C-p> :FZF<cr>
