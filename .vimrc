@@ -29,6 +29,7 @@ set visualbell        " No sounds
 set showmode          " Show curent mode at the bottom
 set ignorecase        " Ignore case while searching
 set mouse=a           " Enable mouse
+"set clipboard=unamed
 "Change window splits
 map <C-j> <C-w>j
 map <C-k> <C-w>k
