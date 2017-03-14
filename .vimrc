@@ -29,21 +29,25 @@ set visualbell        " No sounds
 set showmode          " Show curent mode at the bottom
 set ignorecase        " Ignore case while searching
 set mouse=a           " Enable mouse
+set incsearch
+set ignorecase
+set smartcase
 "set clipboard=unamed
-"Change window splits
+""Change window splits
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-h> <C-w>h
 map <C-l> <C-w>l
+map \q :nohlsearch<CR>
 
 set splitbelow
 set splitright
 
 "Jump remap
-map <C-,> <C-i>
-map <C-.> <C-o>
-
-"Toggle nerd tree
+"map <C-,> <C-i>
+"map <C-.> <C-o>
+"
+""Toggle nerd tree
 map <C-o> :NERDTreeToggle<CR>
 
 "FZF fuzzy file search
