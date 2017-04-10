@@ -42,7 +42,7 @@ map \q :nohlsearch<CR>
 
 set splitbelow
 set splitright
-set cc=80 
+set cc=100 
 "Jump remap
 "map <C-,> <C-i>
 "map <C-.> <C-o>
