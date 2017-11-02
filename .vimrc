@@ -42,7 +42,7 @@ map \q :nohlsearch<CR>
 
 set splitbelow
 set splitright
-set cc=80 
+"set cc=80 
 "Jump remap
 "map <C-,> <C-i>
 "map <C-.> <C-o>
@@ -52,3 +52,7 @@ map <C-o> :NERDTreeToggle<CR>
 
 "FZF fuzzy file search
 nnoremap <C-p> :FZF<cr>
+
+" get occurences of word searchable through double left click
+" "   note: that it removes default visual mode selection of word
+:map <2-LeftMouse> *
