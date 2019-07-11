@@ -2,6 +2,7 @@ call plug#begin()
 Plug 'scrooloose/nerdtree'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'tomlion/vim-solidity'
 call plug#end()
 
 set number            " show line numbers
