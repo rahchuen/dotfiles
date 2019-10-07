@@ -1,4 +1,4 @@
-call plug#begin()                                
+call plug#begin()
 Plug 'scrooloose/nerdtree'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -15,7 +15,7 @@ set shiftwidth=2
 set expandtab
 set softtabstop=2     " number of spaces in tab when editing
 set noswapfile
-set incsearch         " search as characters are entered        
+set incsearch         " search as characters are entered
 set hlsearch          " highlight matches
 set foldenable        " enable folding
 set foldlevelstart=10 " opens most folds by default
@@ -43,7 +43,7 @@ map \q :nohlsearch<CR>
 
 set splitbelow
 set splitright
-"set cc=80 
+"set cc=80
 "Jump remap
 "map <C-,> <C-i>
 "map <C-.> <C-o>
