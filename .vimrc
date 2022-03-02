@@ -43,7 +43,7 @@ map \q :nohlsearch<CR>
 
 set splitbelow
 set splitright
-set cc=80
+"set cc=80
 
 ""NERDTree
 map <C-o> :NERDTreeToggle<CR>
