@@ -1,8 +1,9 @@
 call plug#begin()
 Plug 'preservim/nerdtree'
+Plug 'chriskempson/base16-vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'tomlion/vim-solidity'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 set number            " show line numbers
@@ -34,6 +35,7 @@ set incsearch
 set ignorecase
 set smartcase
 "set clipboard=unamed
+
 ""Change window splits
 map <C-j> <C-w>j
 map <C-k> <C-w>k
@@ -43,12 +45,12 @@ map \q :nohlsearch<CR>
 
 set splitbelow
 set splitright
-"set cc=80
+set cc=80
 
 ""NERDTree
 map <C-o> :NERDTreeToggle<CR>
-autocmd VimEnter * NERDTree | wincmd p
-autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+"autocmd VimEnter * NERDTree | wincmd p
+"autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
 "FZF fuzzy file search
 nnoremap <C-p> :FZF<cr>
@@ -57,3 +59,11 @@ nnoremap <C-p> :FZF<cr>
 " "   note: that it removes default visual mode selection of word
 :map <2-LeftMouse> *
 
+" GoTo code navigation.
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+let base16colorspace=256
+colorscheme base16-embers
