@@ -111,33 +111,5 @@ alias v="f -e vim" # quick opening files with vim
 export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --glob "!.git/*"'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/rachel/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/rachel/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/rachel/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/rachel/google-cloud-sdk/completion.zsh.inc'; fi
-
 export MNML_USER_CHAR="༼ つ ◕_◕ ༽つ"
-source /Users/rachelmonroe/Documents/Configs/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-eval "$(fnm env --use-on-cd)"
-
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/rachelmonroe/.pyenv/versions/miniforge3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/rachelmonroe/.pyenv/versions/miniforge3/etc/profile.d/conda.sh" ]; then
-        . "/Users/rachelmonroe/.pyenv/versions/miniforge3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/rachelmonroe/.pyenv/versions/miniforge3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
 
